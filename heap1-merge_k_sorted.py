@@ -25,10 +25,10 @@ def merge_k_sorted(linked_list_array):
     result = head
     k_list_heap = []
 
-    for i, sorted_list in enumerate(linked_list_array):
+    for i, sorted_llist in enumerate(linked_list_array):
         # put all head onto min-heap
-        if sorted_list:
-            heapq.heappush(k_list_heap, (sorted_list.val, i, sorted_list))
+        if sorted_llist:
+            heapq.heappush(k_list_heap, (sorted_llist.val, i, sorted_llist))
 
     while k_list_heap:
         next_item = heapq.heappop(k_list_heap)
