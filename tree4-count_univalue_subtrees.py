@@ -1,4 +1,5 @@
-# Given the root of a binary tree, return the number of univalue subtrees. A univalue subtree means all nodes of the subtree have the same value.
+# Given the root of a binary tree, return the number of univalue subtrees.
+# A univalue subtree means all nodes of the subtree have the same value.
 
 def count_univalue_subtrees_helper(root):
     if root is None:

@@ -15,7 +15,6 @@ class Trie:
         self.root = root
 
     def insert(self, word):
-        chars = list(word)
         curr_node = self.root
         for c in word:
             if c not in curr_node.children.keys():
